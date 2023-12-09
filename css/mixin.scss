@@ -1,0 +1,38 @@
+/* mixin 스타일 모음: SCSS에서만 보여짐 */ 
+
+/* 가는 테두리와 그림자 */
+@mixin border_shadow_thin {
+    border: 3.5px solid var(--color-black);
+    box-shadow: 3px 3px var(--color-black);
+}
+
+/* 굵은 테두리와 그림자 */
+@mixin border_shadow_bold {
+    border: 5px solid var(--color-black);
+    box-shadow: 10px 5px var(--color-black);
+}
+
+/* 글자에 그림자 */
+@mixin text_style_shadow {
+    text-shadow: 4px 4px var(--color-black);
+}
+
+/* 상단에 점선 테두리 */
+@mixin border_top_dashed {
+    border-top: 4.5px dashed var(--color-black);
+}
+
+/* 하단에 점선 테두리 */
+@mixin border_bottom_dashed {
+    border-bottom: 4.5px dashed var(--color-black);
+}
+
+/* 우측에 점선 테두리 */
+@mixin border_right_dashed {
+    border-right: 4.5px dashed var(--color-black);
+}
+
+/* 좌측에 점선 테두리 */
+@mixin border_left_dashed {
+    border-left: 4.5px dashed var(--color-black);
+}
