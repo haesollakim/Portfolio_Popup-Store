@@ -10,9 +10,6 @@ let colorNum = 0;
  * @param {string} baseSelector - 선택자의 기본 부분
  * @param {number} indexFirst -  첫(시작) 인덱스
  * @param {number} indexLast - 마지막(종료) 인덱스
- */
-
-/**
  * 함수: 타이틀 섹션 문구 中 특정 범위의 문자에 대한 선택자를 생성하고 색상을 변경
  */
 function colorChange(baseSelector, indexFirst, indexLast) {
@@ -24,6 +21,7 @@ function colorChange(baseSelector, indexFirst, indexLast) {
         $(resultSelector).css("color", COLOR_ARRAY[colorNum]);
     }
 }
+
 
 /**
  * 메서드: 1000밀리초(1초) 간격으로 색상 변경 및 반복 실행
@@ -51,13 +49,11 @@ setInterval(function () {
 }, 1000);
 
 
-
 /**
  * @param {number} _ - 현재 요소의 인덱스 (사용되지 않음)
  * @param {string} html - 대상 HTML 문자열
  * @returns {string} - 대체된 HTML 문자열
  */
-
 // 엘립스 섹션의 타이포그래피 中 문자 'S'를 찾아 ".colorful" 클래스의 span으로 감싸는 코드
 $("#section_elipse .typography").html(function (_, html) {
     return html.replace(/S/g, '<span class="colorful">S</span>');
@@ -67,6 +63,7 @@ $("#section_elipse .typography").html(function (_, html) {
 $("#section_polaroid .typography").html(function (_, html) {
     return html.replace(/E/g, '<span class="colorful">E</span>');
 });
+
 
 
 // 클래스가 ".colorful"인 요소에 대해 각각 반복 작업을 수행하는 코드

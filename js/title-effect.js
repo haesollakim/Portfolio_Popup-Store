@@ -7,6 +7,7 @@ $(document).ready(function () {
     $(".title").lettering();
 });
 
+
 /**
  * HTML 문서가 준비된 후 1000밀리초(1초) 뒤에 코드 블록 실행
  */
@@ -14,6 +15,7 @@ $(document).ready(function () {
     // titleEffect 함수 호출
     titleEffect();
 }, 1000);
+
 
 /*
  * 함수: GSAP(TweenMax) 라이브러리를 사용하여 텍스트 애니메이션을 생성
