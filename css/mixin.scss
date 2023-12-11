@@ -26,13 +26,3 @@
 @mixin border_bottom_dashed {
     border-bottom: 4.5px dashed var(--color-black);
 }
-
-/* 우측에 점선 테두리 */
-@mixin border_right_dashed {
-    border-right: 4.5px dashed var(--color-black);
-}
-
-/* 좌측에 점선 테두리 */
-@mixin border_left_dashed {
-    border-left: 4.5px dashed var(--color-black);
-}

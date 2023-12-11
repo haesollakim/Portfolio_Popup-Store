@@ -42,7 +42,7 @@
 
 /* 하단 3번 버튼 */
 .bottom_tab_03 {
-    background-image: url(../images/checkboard-pattern-small.png);
+    background-color: var(--color-cream);
 }
 
 /* 하단 4번 버튼 */
@@ -171,7 +171,6 @@
         align-items: center;
         border-top: 4px solid var(--color-black);
         padding: 0 7.5%;
-        // margin: 10px 0;
     }
 
     /* 반응형을 위한 br 태그 조정 */
