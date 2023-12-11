@@ -154,31 +154,40 @@
   border: 5px solid var(--color-black);
   box-shadow: 10px 5px var(--color-black);
   background-color: var(--color-white);
+  transition: 0.5s;
+}
+[class^=elipse] div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-size: cover;
   background-position: center;
-  transition: 0.5s;
 }
 
 /* 1번 엘립스 */
 .elipse_01 {
-  background-image: url(../images/promotion/model-shot-04.png);
   margin-right: -10vw;
   z-index: 1;
+}
+.elipse_01 div {
+  background-image: url(../images/promotion/model-shot-04.png);
 }
 
 /* 2번 엘립스 */
 .elipse_02 {
-  background-image: url(../images/promotion/checkboard-pattern.png);
-  background-size: cover;
-  background-position: center;
   margin-right: -10vw;
   z-index: 2;
+}
+.elipse_02 div {
+  background-image: url(../images/promotion/checkboard-pattern.png);
 }
 
 /* 3번 엘립스 */
 .elipse_03 {
-  background-image: url(../images/promotion/product-shot-04.jpg);
   z-index: 3;
+}
+.elipse_03 div {
+  background-image: url(../images/promotion/product-shot-04.jpg);
 }
 
 /* 흐르는 글자 효과 래퍼 */
